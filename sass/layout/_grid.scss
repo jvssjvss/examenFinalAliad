@@ -33,13 +33,16 @@
     height: 62px;
 
 }
-.main__medio__textos h4, .main__parteInferior p{
+.main__medio__textos h4, .main__parteInferior__texto, .footer__list__title{
     font-size: $tipoBoldSize;
     font-weight: 900;
 
 }
+.main__parteInferior{
+    background-color: $colorBackground;
+}
 
-.main__parteInferior p{
+.main__parteInferior__texto{
     width: 328px;
     word-wrap: break-word;
 }

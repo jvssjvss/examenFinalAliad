@@ -1,2 +1,32 @@
 /* @FOOTER */
 /* ********** */
+footer{
+    background-color: $colorFooter;
+}
+.footer__parte1, .footer__parte2, .footer__parteRedes, .footer__copyArea, .footer__areaBoton, .footer__list__pseudoBoton{
+    display:  flex;
+
+}
+
+
+.footer__parteRedes, .footer__areaBoton, .footer__copyArea, .footer__list__pseudoBoton{
+
+    justify-content: center;
+    align-items: center;
+
+}
+.footer__parteRedes ul{
+    display: grid;
+    grid-row-gap: $rowPadding;
+}
+
+.footer__areaBoton__email{
+    height: 50px;
+    width: 328px;
+
+}
+
+.footer__list__pseudoBoton{
+    border: 2px solid $colorNegro;
+    padding: 6px;
+}

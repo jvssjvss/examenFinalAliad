@@ -1,6 +1,6 @@
 /* @BOTONES */
 /* ********** */
-article{
+article, .footer__areaBoton__boton{
     height: 50px;
     display: flex;
     align-items: center;
@@ -28,5 +28,12 @@ article{
     color: $colorBackground;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+
+}
+.footer__areaBoton__boton{
+    width: 328px;
+    border-radius: 20px;
+    background-color: $colorBotones;
+    color: $colorBackground;
 
 }

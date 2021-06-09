@@ -8,8 +8,8 @@ header{
 }
 .header__botones{
     display: grid;
-    padding-top: $headerPadding;
-    grid-row-gap:  $headerPadding;
+    padding-top: $rowPadding;
+    grid-row-gap:  $rowPadding;
 }
 .header__logo{
 
