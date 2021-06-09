@@ -6,20 +6,40 @@
     grid-template-rows: auto;
     padding-left: $pagePadding;
     padding-right: $pagePadding;
+    box-sizing: border-box;
 
 }
-.main__parteSuperior{
+
+.main__medio, .main__parteInferior, .main__parteSuperior{
     display: grid;
+    justify-items: center;
+
+}
+
+.main__parteSuperior{
+ 
     background-color: $colorClaro;
     padding-bottom: 34px;
 }
 
-.main__parteSuperior__img, .main__parteSuperior__texto{
-    justify-self: center;
-}
 
 .main__parteSuperior__texto{
-    width: 296px;
+    width: 328px;
     height: 130px;
 
+}
+
+.main__medio__textos p{
+    height: 62px;
+
+}
+.main__medio__textos h4, .main__parteInferior p{
+    font-size: $tipoBoldSize;
+    font-weight: 900;
+
+}
+
+.main__parteInferior p{
+    width: 328px;
+    word-wrap: break-word;
 }
