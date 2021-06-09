@@ -1,11 +1,25 @@
 /* @GRIDS */
 /* ********** */
 .container{
-    height: 400vh;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     padding-left: $pagePadding;
     padding-right: $pagePadding;
+
+}
+.main__parteSuperior{
+    display: grid;
+    background-color: $colorClaro;
+    padding-bottom: 34px;
+}
+
+.main__parteSuperior__img, .main__parteSuperior__texto{
+    justify-self: center;
+}
+
+.main__parteSuperior__texto{
+    width: 296px;
+    height: 130px;
 
 }

@@ -5,21 +5,28 @@ article{
     display: flex;
     align-items: center;
     justify-content: center;
-    align-self: center;
+    justify-self: center;
 
 }
 
 
 .header__boton__comprar{
-    justify-self: center;
     background-color: $colorBotones;
     width: 129px;
     color: $colorBackground;
 
 }
 .header__boton__productos, .header__boton__servicios{
-    background-color: $colorBotonClaro;
+    background-color: $colorClaro;
     width: 327px;
     color: $colorNegro;
+
+}
+.main__parteSuperior__boton{
+    background-color: $colorBotones;
+    width: 296px;
+    color: $colorBackground;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 
 }
