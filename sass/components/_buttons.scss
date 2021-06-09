@@ -1,6 +1,6 @@
 /* @BOTONES */
 /* ********** */
-article, .footer__areaBoton__boton{
+a, .footer__areaBoton__boton{
     height: 50px;
     display: flex;
     align-items: center;
@@ -8,18 +8,25 @@ article, .footer__areaBoton__boton{
     justify-self: center;
 
 }
-
+.header__boton__inicio{
+    display: none;
+}
 
 .header__boton__comprar{
     background-color: $colorBotones;
     width: 129px;
     color: $colorBackground;
 
+
 }
 .header__boton__productos, .header__boton__servicios{
     background-color: $colorClaro;
-    width: 327px;
+    width: 328px;
     color: $colorNegro;
+    @media screen and (min-width: 1300px){
+        background-color: $colorBlanco;
+
+    }
 
 }
 .main__parteSuperior__boton{
@@ -28,6 +35,13 @@ article, .footer__areaBoton__boton{
     color: $colorBackground;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    @media screen and (min-width: 1300px){
+        width: 98px;
+        height: 41px;
+        border-radius: 0px;
+
+
+    }
 
 }
 .footer__areaBoton__boton{
@@ -35,5 +49,29 @@ article, .footer__areaBoton__boton{
     border-radius: 20px;
     background-color: $colorBotones;
     color: $colorBackground;
+
+}
+@media screen and (min-width: 1300px){
+    .header__boton__inicio{
+        display: flex;
+        grid-area: a1;
+    }
+.header__boton__productos
+{
+    grid-area: a2;
+}
+.header__boton__servicios
+{
+    grid-area: a3;
+}
+.header__boton__compra
+{
+    grid-area: a4;
+}
+}
+
+.header__botones__activo{
+    color: $colorBotones;
+    font-weight: $weightBold;
 
 }

@@ -6,13 +6,17 @@
     grid-template-rows: auto;
     padding-left: $pagePadding;
     padding-right: $pagePadding;
-    box-sizing: border-box;
 
 }
 
 .main__medio, .main__parteInferior, .main__parteSuperior{
     display: grid;
     justify-items: center;
+    align-items: center;
+    @media screen and (min-width: 1300px){
+        grid-template-columns: 1fr 1fr;
+
+    }
 
 }
 
@@ -20,29 +24,95 @@
  
     background-color: $colorClaro;
     padding-bottom: 34px;
+    @media screen and (min-width: 1300px){
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: "logoArea propaganda"
+        "descripcion foto";
+
+    }
 }
+.main__parteSuperior__propaganda, .main__parteSuperior__logo{
+    display: none;
+}
+@media screen and (min-width: 1300px){
+    .main__parteSuperior__propaganda{
+        display: block;
+        grid-area: propaganda;
+    }
+    .main__parteSuperior__logo{
+        display: block;
+        grid-area: logoArea;
+    }
+
+
+}
+
 
 
 .main__parteSuperior__texto{
-    width: 328px;
+    width: $widthMovilItems;
     height: 130px;
+    @media screen and (min-width: 1300px){
+        grid-area: descripcion;
+    }
+    
+
+}
+.main__parteSuperior__img{
+    @media screen and (min-width: 1300px){
+        grid-area: foto;
+    }
 
 }
 
-.main__medio__textos p{
+.main__medio p{
     height: 62px;
 
 }
-.main__medio__textos h4, .main__parteInferior__texto, .footer__list__title{
+.main__medio h4, .main__parteInferior__texto, .footer__list__title{
     font-size: $tipoBoldSize;
     font-weight: 900;
 
 }
 .main__parteInferior{
     background-color: $colorBackground;
+    @media screen and (min-width: 1300px){
+        grid-template-areas: "texto imgParteInferior";
+    }
+    
 }
 
 .main__parteInferior__texto{
-    width: 328px;
+    width: $widthMovilItems;
     word-wrap: break-word;
+    @media screen and (min-width: 1300px){
+        width: 80%;
+        height: 90%;
+    }
+    
 }
+@media screen and (min-width: 1300px){
+.main__medio{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:"left imgMedio right";
+
+}
+
+.main__medio__left{
+
+
+        grid-area: left;
+
+
+}
+
+.main__medio__right{
+        grid-area: right;
+
+}
+.main__medio__img{
+        grid-area: imgMedio;
+
+}}

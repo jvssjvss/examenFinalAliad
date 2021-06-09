@@ -2,6 +2,16 @@
 /* ********** */
 footer{
     background-color: $colorFooter;
+    @media screen and (min-width: 1300px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 30px;
+        grid-template-areas: "parte1 parte2 parteRedes areaBoton" 
+        "copyArea copyArea copyArea copyArea";
+
+
+    }
+    
 }
 .footer__parte1, .footer__parte2, .footer__parteRedes, .footer__copyArea, .footer__areaBoton, .footer__list__pseudoBoton{
     display:  flex;
@@ -22,11 +32,34 @@ footer{
 
 .footer__areaBoton__email{
     height: 50px;
-    width: 328px;
+    width: $widthMovilItems;
+
+    
 
 }
 
 .footer__list__pseudoBoton{
     border: 2px solid $colorNegro;
     padding: 6px;
+    @media screen and (min-width: 1300px){
+        border: 0px;}
 }
+
+@media screen and (min-width: 1300px){
+.footer__parte1{
+        grid-area: parte1;
+}
+.footer__parte2{
+        grid-area: parte2;
+
+}
+.footer__parteRedes{
+        grid-area: parteRedes;
+
+}
+.footer__areaBoton{
+        grid-area: areaBoton;
+}
+.footer__copyArea{
+        grid-area: copyArea;
+}}

@@ -4,18 +4,20 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Examen Final</title>
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
         <section class="container">
         <!-- HEADER -->
         <header>
-            <section class="header__botones">
-                <article class="header__boton__comprar">Comprar ya!</article>
-                <article class="header__boton__productos">Productos</article>
-                <article class="header__boton__servicios">Servicios</article>
-            </section>
+            <nav class="header__botones">
+                <a href="#" class="header__boton__inicio header__botones__activo">Inicio</a>
+                <a href="#" class="header__boton__comprar">Comprar ya!</a>
+                <a href="#" class="header__boton__productos">Productos</a>
+                <a href="#" class="header__boton__servicios">Servicios</a>
+                
+            </nav>
             <h1 class="header__logo">
                 LOGOTIPO
             </h1>
@@ -23,16 +25,31 @@
         <!-- MAIN -->
         <main>
             <section class="main__parteSuperior">
-                <img class="main__parteSuperior__img" src="./img/smartphone/camara_frente.jpg" alt="">
+                <h1 class="main__parteSuperior__logo">LOGOTIPO</h1>
+                <h2 class="main__parteSuperior__propaganda">Nueva Cámara, con Nueva Lente</h2>
+
+                <picture class="main__parteSuperior__img">
+                    <source srcset="./img/smartphone/camara_frente.jpg">
+                    <source media="(min-width:1300px)" srcset="./img/desktop/camara_frente.jpg 1x, ./img/desktop/camara_frente@2x.jpg 2x">
+                <img  src="" alt="">
+                </picture>
+
+
                 <p class="main__parteSuperior__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac 
                     eget orci lectus a. Tellus integer accumsan aliquet arcu cras tristique. 
                     Semper proin porta adipiscing faucibus. Eu scelerisque ornare nunc, vene
                     natis fringilla tincidunt consectetur.</p>
-                    <article class="main__parteSuperior__boton">Leer más...</article>
+                    <a href="#" class="main__parteSuperior__boton">Leer más...</a>
             </section>
             <section class="main__medio">
-                <img src="./img/smartphone/camara_arriba.jpg" alt="">
-                <section class="main__medio__textos">
+
+                <picture class="main__medio__img">
+                    <source srcset="./img/smartphone/camara_arriba.jpg">
+                    <source media="(min-width:1300px)" srcset="./img/desktop/camara_arriba.jpg">
+                <img  src="" alt="">
+                </picture>
+
+                    <section class="main__medio__left">
                     <h4>Opción 1</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
@@ -42,6 +59,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
 
                     </p>
+                </section>
+                <section class="main__medio__right">
                     <h4>Opción 3</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
@@ -52,8 +71,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
 
                     </p>
-
                 </section>
+
+
 
 
 
@@ -65,7 +85,12 @@
 
             </section>
             <section class="main__parteInferior">
-                <img class="main__parteInferior__img" src="./img/smartphone/lente.jpg" alt="">
+                <picture class="main__parteInferior__img">
+                    <source srcset="./img/smartphone/lente.jpg">
+                    <source media="(min-width:1300px)" srcset="./img/desktop/lente.jpg 1x, ./img/desktop/lente@2x.jpg 2x">
+                <img  src="" alt="">
+                </picture>
+
                 <p class="main__parteInferior__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst proin augue habitant nibh condimentum. Mi imperdiet enim aliquam enim proin tellus, fringilla et et. Ultrices lobortis in risus suspendisse eget rhoncus, mauris, lobortis. In tincidunt bibendum at in cursus. Eleifend faucibus turpis quis justo amet maecenas quis. Suscipit nibh sem est at. A lectus euismod metus, pretium id.
                     Leo ac elementum diam eget massa consectetur. Adipiscing maecenas sit gravida tincidunt posuere aenean semper auctor. Placerat sit quam mattis integer amet cursus. Turpis non magna risus libero, volutpat, et. Tortor elementum magna odio nulla. Id fermentum sapien eu nunc tristique id. Egestas purus venenatis interdum odio est ipsum faucibus maecenas. Ultricies sit erat ac nunc velit. Etiam neque blandit pharetra orci sed amet. Ultricies nec, vulputate suspendisse auctor risus massa vel, viverra pulvinar. Malesuada dignissim feugiat morbi sit dolor urna.
                     A et ipsum sollicitudin phasellus ultricies. Suscipit et et platea eget in faucibus. Vitae amet, malesuada erat praesent. Enim, lacinia enim placerat mi morbi dui sapien eget. Sapien convallis sed quis amet tellus in sed quam id.

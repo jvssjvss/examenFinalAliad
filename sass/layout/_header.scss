@@ -5,13 +5,21 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .header__botones{
     display: grid;
     padding-top: $rowPadding;
     grid-row-gap:  $rowPadding;
+    @media screen and (min-width: 1300px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'a1 a2 a3 a4';
+
+    }
 }
 .header__logo{
-
     font-size: $tipoLogoSize;
+    @media screen and (min-width: 1300px){
+        display: none;
+    }
 }
