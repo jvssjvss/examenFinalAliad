@@ -1,2 +1,25 @@
 /* @BOTONES */
 /* ********** */
+article{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+}
+
+
+.header__boton__comprar{
+    justify-self: center;
+    background-color: $colorBotones;
+    width: 129px;
+    color: $colorBackground;
+
+}
+.header__boton__productos, .header__boton__servicios{
+    background-color: $colorBotonClaro;
+    width: 327px;
+    color: $colorNegro;
+
+}

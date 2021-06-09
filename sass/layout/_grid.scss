@@ -1,4 +1,11 @@
 /* @GRIDS */
 /* ********** */
+.container{
+    height: 400vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding-left: $pagePadding;
+    padding-right: $pagePadding;
 
-
+}
